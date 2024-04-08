@@ -4,6 +4,7 @@ from src.diffusers import StableVideoDiffusionPipeline
 from src.diffusers.utils import load_image, export_to_video
 from PIL import Image
 
+
 pipe = StableVideoDiffusionPipeline.from_pretrained(
     "stabilityai/stable-video-diffusion-img2vid-xt", torch_dtype=torch.float16, variant="fp16"
 )
