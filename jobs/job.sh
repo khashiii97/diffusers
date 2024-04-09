@@ -6,7 +6,6 @@
 #SBATCH --mem=32G                      # Job memory request
 #SBATCH --time=02:00:00                # Time limit hrs:min:sec
 #SBATCH --output=job_logs/deep_learning_job_%j.log  # Standard output and error log
-#SBATCH --error=job_logs/deep_learning_job_%j..err
 #SBATCH --gres=gpu:1                   # Request GPU resource
 
 # Load any modules and activate your conda environment here
@@ -21,4 +20,4 @@ source /home/kka151/venvs/torch/bin/activate
 
 
 # Execute your deep learning script
-python3 svd_test.py
+python3 unet_merge.py
